@@ -1,19 +1,33 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-<Hello message="coming!!!"/>
+
+    <Hello message="coming!!!"/>
+    <ComputedAndWatch/>
+    <ClassAndStyle/>
+    <IfAndShow/>
+    <VFor/>
+    
   </div>
 </template>
 
 <script>
 import Hello from './Hello';
+import ComputedAndWatch from './ComputedAndWatch';
+import ClassAndStyle from './ClassAndStyle';
+import IfAndShow from './IfAndShow';
+import VFor from './VFor'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
   },
   components: {
-    Hello
+    Hello,
+    ComputedAndWatch,
+    ClassAndStyle,
+    IfAndShow,
+    VFor
   }}
 </script>
 
