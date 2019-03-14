@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="addCount">You Click Me {{count}} Times.</button>
-    <BaseButton/>
+    <BaseButton size="small" bordered :disabled="true"/>
   </div>
 </template>
 
